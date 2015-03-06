@@ -1,7 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 var app = express();
-var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+var XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
 
 app.get('/', function(req, res) {
    
