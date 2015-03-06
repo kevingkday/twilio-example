@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
     xhr.open("GET", "https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC", false);
     xhr.send();
 
-    var balance = "blahblah";
+   var balance = (xhr.responseText);
 
  
 
