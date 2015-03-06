@@ -12,18 +12,10 @@ app.get('/', function(req, res) {
 
     var balance = (xhr.responseText);
 
-    var total = JSON.parse(balance);
-
-  
-
-   
-    
-
-    
-    
+ 
 
     res.status(200)
-    .send({ success: true })
+    .send({ success: totaloutput })
 
 });
 
