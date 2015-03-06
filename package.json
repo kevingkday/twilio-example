@@ -1,0 +1,4 @@
+{
+  "name": "xmlhttprequest",
+  "main": "./lib/XMLHttpRequest.js"
+}
