@@ -1,4 +1,4 @@
-var express = require('../../local/bin/express');
+var express = require('../local/bin/express');
 var fs = require('fs');
 var app = express();
 
