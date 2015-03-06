@@ -2,7 +2,7 @@ var express = require('express');
 var fs = require('fs');
 var app = express();
 var XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
-var JSON = require('json');
+
 
 app.get('/', function(req, res) {
    
