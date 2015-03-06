@@ -6,7 +6,7 @@ var XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
 app.get('/', function(req, res) {
    
     var xhr = new XMLHttpRequest();
-    xhs.open("GET", "https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC", false);
+    xhr.open("GET", "https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC", false);
     
 
     res.status(200)
