@@ -1,6 +1,0 @@
-"name": "twilio-example",
-   "version": "0.0.1",
-   "description": "Twilo example",
-   "dependencies": {
-      "twilio": "1.11.0"
-   }
