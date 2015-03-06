@@ -4,7 +4,13 @@ var app = express();
 
 app.get('/', function(req, res) {
  res.status(200)
- .send({ success: true })
+// .send({ success: true })
+ 
+ var xhs = new XMLHttpRequest();
+ xhs.open("GET", "https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC", false);
+ xhs.send();
+ 
+ 
 
 });
 
