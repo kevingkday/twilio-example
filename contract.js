@@ -3,8 +3,9 @@ var fs = require('fs');
 var app = express();
 
 app.get('/', function(req, res) {
-  res.set('Content-Type', 'text/plain');
-  res.send(fs.readFileSync('contract.js', 'utf-8')).end();
+ res.status(200)
+ .send({ success: true })
+
 });
 
 app.listen(process.env.PORT || 5000);
