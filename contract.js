@@ -13,7 +13,6 @@ app.get('/', function(req, res) {
    var balance = (xhr.responseText);
 
  
-
     res.status(200)
     .send({ success: true, balance: balance })
 
