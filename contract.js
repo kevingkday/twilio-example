@@ -10,9 +10,13 @@ app.get('/', function(req, res) {
     xhr.open("GET", "https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC", false);
     xhr.send();
 
-  // var balance = (xhr.responseText);
-var balance = "{ "success": true, "ledger": 12105485, "validated": true, "balances": [ { "value": "0.00718421768538286", "currency": "BTC", "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q" } ] }"
- 
+   var balance = (xhr.responseText);
+   var total = JSON.parse(balance);
+
+
+
+
+
     res.status(200)
     .send({ success: true, balance: balance })
 
