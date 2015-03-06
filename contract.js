@@ -1,7 +1,9 @@
-var http = require('http');
+var express = require('express');
+var fs = require('fs');
+var app = express();
 
-var server = http.createServer(function (request, response) {
-
+app.get('/', function(req, res) {
+res.status(200)
 
 var xhs = new XMLHttpRequest();
 xhs.open("GET", "https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC", false);
@@ -20,8 +22,6 @@ xmlhttp = new XMLHttpRequest();
 xmlhttp.open("POST", "http://www.mobilikey.com/service/Sms.aspx", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send("From=%2B16048385077&To=%2B16042103679&Body="+totaloutput);
-    
-
 });
 
-server.listen(8000);
+app.listen(process.env.PORT || 5000);
