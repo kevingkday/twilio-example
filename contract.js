@@ -8,8 +8,8 @@ app.get('/', function(req, res) {
 // .send({ success: true })
  
  var xhs = new XMLHttpRequest();
- xhs.open("GET", "https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC", false);
- xhs.send();
+// xhs.open("GET", "https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC", false);
+// xhs.send();
  
  
 
