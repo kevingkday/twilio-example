@@ -1,5 +1,6 @@
 var express = require('express');
 var fs = require('fs');
+var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 var app = express();
 
 app.get('/', function(req, res) {
