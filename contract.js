@@ -7,9 +7,9 @@ app.get('/', function(req, res) {
    
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC", false);
-    xhs.send();
+    xhr.send();
 
-    var balance = (xhs.responseText);
+    var balance = (xhr.responseText);
 
   
 
