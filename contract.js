@@ -5,7 +5,7 @@ var XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
 
 app.get('/', function(req, res) {
    
-    var xhs = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
    
 
     res.status(200)
