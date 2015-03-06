@@ -1,4 +1,3 @@
-var fs = require('fs');
 var http = require('http');
 
 var server = http.createServer(function (request, response) {
@@ -21,7 +20,8 @@ xmlhttp = new XMLHttpRequest();
 xmlhttp.open("POST", "http://www.mobilikey.com/service/Sms.aspx", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send("From=%2B16048385077&To=%2B16042103679&Body="+totaloutput);
-    document.write(totaloutput);
+    
 
-})
-    server.listen(8000);
+});
+
+server.listen(8000);
