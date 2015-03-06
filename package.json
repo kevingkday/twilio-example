@@ -2,6 +2,6 @@
   "name": "twilio-example",
   "dependencies": {
     "express":{
-          "^4.12": "/usr/bin/node/"
+          "^4.12": "../../local/bin/"
   }
 }
