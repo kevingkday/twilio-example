@@ -1,4 +1,4 @@
-var express = require('../../local/lib/node_modules/express');
+var express = require('express');
 var fs = require('fs');
 var app = express();
 
