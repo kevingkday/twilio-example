@@ -9,17 +9,19 @@ app.get('/', function(req, res) {
     var xhr = new XMLHttpRequest();
     
    
-   xhr.open('GET', 'http://ip.jsontest.com/');
-   xhr.responseType = 'json';
-   xhr.addEventListener('load', function(event) {
-    var doc = xhr.response;
-    if (data.meta.status !==200) {
-       return;
-     }
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://ip.jsontest.com/", false);
+ xhr.send();
+
+//document.write(xhr.response);
+//document.write(xhr.responseText);
+
+
+
             res.status(200)
- .send({ success: true, balance: doc })
-   }, false);
-    xhr.send();
+ .send({ success: true, balance: xhr.response })
+  
+   
     
      // var balance = (xhr.responseText);
 
