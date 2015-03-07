@@ -8,7 +8,7 @@ app.get('/', function(req, res) {
    
     var xhr = new XMLHttpRequest();
     
-   xhr.open('GET', 'http://www.w3schools.com/ajax/demo_get.asp');
+   xhr.open('GET', 'http://www.w3schools.com/ajax/demo_get.asp', false);
    //xhr.open('GET', 'https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC');
     xhr.send();
 
@@ -20,9 +20,9 @@ app.get('/', function(req, res) {
 
 
     res.status(200)
-    document.write(balance);
+
     
-   // .send({ success: true, balance: balance })
+ .send({ success: true, balance: balance })
 
 });
 
