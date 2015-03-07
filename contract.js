@@ -13,7 +13,7 @@ app.get('/', function(req, res) {
     xhr.send();
 
   // var balance = (xhr.responseText);
-   var balance = '{"name":"John Johnson","street":"Oslo West 16","phone":"555 1234567"}'
+   var balance = '{ "success": true, "ledger": 12106156, "validated": true, "balances": [ { "value": "0.00718421768538286", "currency": "BTC", "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q" } ] }'
    
   // var total = JSON.parse(balance);
 
