@@ -12,12 +12,12 @@ app.get('/', function(req, res) {
    xhr.open('GET', 'http://ip.jsontest.com/');
    xhr.responseType = 'json';
    xhr.addEventListener('load', function(event) {
-    var doc = client.response;
+    var doc = xhr.response;
     if (data.meta.status !==200) {
        return;
      }
             res.status(200)
- .send({ success: true, balance: xhr.responseText })
+ .send({ success: true, balance: doc })
    }, false);
     xhr.send();
     
