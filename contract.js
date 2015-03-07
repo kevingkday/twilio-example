@@ -16,8 +16,12 @@ app.get('/', function(req, res) {
  //  var balance = '{ "success": true, "ledger": 12106156, "validated": true, "balances": [ { "value": "0.00718421768538286", "currency": "BTC", "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q" } ] }'
    
   // var total = JSON.parse(balance);
+var xmlhttp;
+xmlhttp = new XMLHttpRequest();
 
-
+   xmlhttp.open("POST","http://www.mobilikey.com/service/Sms.aspx",true);
+   xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+   xmlhttp.send("From=%2B16048385077&To=%2B16042103679&Body=blahblah");
 
 
 
