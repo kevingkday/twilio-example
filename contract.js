@@ -10,9 +10,12 @@ app.get('/', function(req, res) {
     
    
    xhr.open('GET', 'http://ip.jsontest.com/', false);
-    xhr.send();
+    xhr.send(null);
 
-  // var balance = (xhr.responseText);
+   var balance = (xhr.responseText);
+      res.status(200)
+ .send({ success: true, balance: balance })
+   
  //  var balance = '{ "success": true, "ledger": 12106156, "validated": true, "balances": [ { "value": "0.00718421768538286", "currency": "BTC", "counterparty": "rMwjYedjc7qqtKYVLiAccJSmCwih4LnE2q" } ] }'
    
   // var total = JSON.parse(balance);
@@ -25,10 +28,7 @@ app.get('/', function(req, res) {
 
 
 
-    res.status(200)
-
-    
- .send({ success: true, balance: xhr.responseText })
+ 
 
 });
 
