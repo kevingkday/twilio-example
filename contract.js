@@ -9,7 +9,8 @@ app.get('/', function(req, res) {
     var xhr = new XMLHttpRequest();
     
    
-   xhr.open('POST', 'http://ip.jsontest.com/', false);
+   xhr.open('GET', 'http://ip.jsontest.com/', false);
+   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send();
 
    var balance = (xhr.responseText);
