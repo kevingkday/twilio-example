@@ -12,7 +12,9 @@ app.get('/', function(req, res) {
    //xhr.open('GET', 'https://api.ripple.com/v1/accounts/rDxMDiegComKQLiPoQ4hzS2kpUu4UxTWon/balances?currency=BTC');
     xhr.send();
 
-   var balance = (xhr.responseText);
+  // var balance = (xhr.responseText);
+   var balance = '{"name":"John Johnson","street":"Oslo West 16","phone":"555 1234567"}'
+   
   // var total = JSON.parse(balance);
 
 
